@@ -17,14 +17,16 @@ import ti4 from '../../../public/assets/ti4.png';
 import ti5 from '../../../public/assets/ti5.png';
 import ti6 from '../../../public/assets/ti6.png';
 
+import avatars from '../../../public/assets/avatars.webp';
+
 const Team = () => {
     return (
-        <div>
-            <span className='text-5xl font-bold pb-6 flex justify-center items-center'>
+        <div className=''>
+            <span className='text-5xl font-bold pb-6 flex justify-center items-center max-sm:text-center'>
                 Every team, side-by-side
             </span>
             <Tab.Group>
-                <Tab.List className='flex flex-row mb-4 justify-between'>
+                <Tab.List className='flex flex-row mb-4 justify-between overflow-x-scroll'>
                     <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti1} alt='ti1' className='w-16 h-16' />
                         <span className='text-[##050505] text-base font-medium '>
@@ -107,9 +109,9 @@ const Team = () => {
                     </Tab.Panel>
                 </Tab.Panels>
             </Tab.Group>
-            <div className='h-[120px]'></div>
-            <div className='flex flex-col justify-center items-center mx-40 pb-7'>
-                <span className='text-5xl font-bold pb-6 text-center'>
+            <div className='md:h-[120px] max-sm:h-20'></div>
+            <div className='flex flex-col justify-center items-center md:mx-40 pb-7'>
+                <span className='text-5xl font-bold pb-6 text-center max-sm:text-3xl'>
                     Join a global movement. Unleash your creativity.
                 </span>
                 <span className='text-center'>

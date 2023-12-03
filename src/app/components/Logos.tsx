@@ -30,12 +30,14 @@ import i26 from '../../../public/assets/i26.png';
 import i31 from '../../../public/assets/i31.png';
 import i32 from '../../../public/assets/i32.png';
 
-import toolgirl from '../../../public/assets/tool-girl.webp';
-import toolline from '../../../public/assets/tool-line.webp';
+import toolgirl from '../../../public/assets/tool-girl.png';
+import toolline from '../../../public/assets/tool-line.png';
 import toollogo from '../../../public/assets/tool-logo.webp';
 
 import metalab from '../../../public/assets/metalab.png';
 import matchgroup from '../../../public/assets/match-group.png';
+
+import peek from '../../../public/assets/topPeek.png';
 
 const Logos = () => {
     function classNames(arg0: string, arg1: string, arg2: string): string {
@@ -45,8 +47,8 @@ const Logos = () => {
     return (
         <div>
             <div className='h-[120px]'></div>
-            <div className='flex flex-col mx-24'>
-                <span className='text-4xl font-bold pt-14 my-3 text-center'>
+            <div className='flex flex-col md:mx-24'>
+                <span className='text-4xl font-bold md:pt-14 my-3 text-center'>
                     Millions run on Notion every day
                 </span>
                 <span className='text-2xl  font-medium mb-2 text-center'>
@@ -55,12 +57,12 @@ const Logos = () => {
                 </span>
                 <a
                     href=''
-                    className='text-center hover:underline text-[#0a85d1]'
+                    className='text-center hover:underline text-[#0a85d1] font-semibold'
                 >
                     Read customer {'stories '}
                     <span aria-hidden='true'>→</span>
                 </a>
-                <div className='mt-8 flex flex-row items-center mb-12 justify-center'>
+                <div className='mt-8 flex flex-row max-sm:flex-wrap items-center mb-12 justify-center'>
                     <Image src={i11} alt='' className='h-4' />
                     <Image src={i12} alt='' className='h-4' />
                     <Image src={i13} alt='' className='h-4' />
@@ -68,7 +70,7 @@ const Logos = () => {
                     <Image src={i15} alt='' className='h-4' />
                     <Image src={i16} alt='' className='h-4' />
                 </div>
-                <div className='mt-8 flex flex-row mb-12'>
+                <div className='mt-8 flex flex-row mb-12 max-sm:flex-wrap'>
                     <Image src={i21} alt='' className='h-6 ' />
                     <Image src={i22} alt='' className='h-6 ' />
                     <Image src={i23} alt='' className='h-6 ' />
@@ -76,13 +78,13 @@ const Logos = () => {
                     <Image src={i25} alt='' className='h-6 ' />
                     <Image src={i26} alt='' className='h-6 ' />
                 </div>
-                <div className='mt-8 flex flex-row mb-12'>
+                <div className='mt-8 flex flex-row mb-12 max-sm:flex-wrap'>
                     <Image src={i31} alt='' className='h-6 ' />
                     <Image src={i32} alt='' className='h-6 ' />
                 </div>
             </div>
 
-            <div className='h-[40px]'></div>
+            <div className='md:h-[40px] max-sm:h-5'></div>
 
             <div className='flex flex-col'>
                 <span className='text-5xl font-bold pt-14 my-3 text-center'>
@@ -90,32 +92,43 @@ const Logos = () => {
                     Cut costs.
                 </span>
                 <div className='flex flex-col justify-center content-center'>
-                    <Image
-                        src={toollogo}
-                        alt=''
-                        className='w-[25em] object-contain'
-                    />
-                    <Image
-                        src={toolline}
-                        alt=''
-                        className='w-[25em] object-contain'
-                    />
+                    <div className='flex flex-row justify-center items-center mt-4 relative'>
+                        <Image
+                            src={toolgirl}
+                            alt=''
+                            className='absolute w-52 h-auto right-0 mr-28 mb-52 max-sm:hidden'
+                        />
+                        <Image
+                            src={toollogo}
+                            alt=''
+                            className='w-[35em] object-contain'
+                        />
+                        {/* </div> */}
+                        {/* <div className='flex flex-row justify-center items-center mt-4'> */}
+                        <Image
+                            src={toolline}
+                            alt=''
+                            className='w-[35em] object-contain absolute'
+                        />
+                    </div>
                 </div>
                 {/* <Image src={toolline} alt='' /> */}
             </div>
             <div className='min-h-[56px]'></div>
-            <div className='flex flex-col mx-40'>
+            <div className='flex flex-col md:mx-40'>
                 <span className='font-[georgia] text-center text-3xl'>
                     "We got rid of nearly a dozen different tools because of{' '}
                     {/* <br /> */}
                     what Notion does for us."
                 </span>
-                <div className='flex flex-row justify-center mt-4'>
-                    <Image
-                        src={metalab}
-                        alt='metalab img'
-                        className='w-auto h-auto mr-2'
-                    />
+                <div className='flex flex-row justify-center items-center mt-4'>
+                    <div className='flex justify-center items-center'>
+                        <Image
+                            src={metalab}
+                            alt='metalab img'
+                            className='w-auto h-auto mr-2'
+                        />
+                    </div>
                     <div className='flex flex-col text-sm'>
                         <span className='font-bold'>Justin Watt</span>
                         <span>Director of Ops & Marketing, MetaLab</span>
@@ -123,9 +136,16 @@ const Logos = () => {
                 </div>
             </div>
             <div className='min-h-[80px]'></div>
-            <span className='text-5xl font-bold pb-6 flex justify-center items-center'>
-                Powerful building blocks
-            </span>
+            <div className='relative'>
+                <span className='text-5xl font-bold pb-6 flex justify-center items-center max-sm:text-center max-sm:mb-32'>
+                    Powerful building blocks
+                </span>
+                <Image
+                    src={peek}
+                    alt='top peek image'
+                    className='absolute h-36 w-auto left-0 bottom-0 max-sm:-mb-32'
+                />
+            </div>
             <div className='flex flex-wrap justify-between'>
                 <div className='flex flex-col px-8 py-7 bg-[#F6F5F4] rounded-lg mb-4'>
                     <div className='flex flex-col'>
@@ -183,26 +203,26 @@ const Logos = () => {
                                     />
                                 </Tab.Panel>
                             </Tab.Panels>
-                            <Tab.List className='flex flex-row mb-4 mt-4 justify-center'>
-                                <Tab className='flex flex-col bg-[#E3E2E1] hover:bg-[#ECEBEA] border-none rounded-lg py-1 px-2  justify-between mr-3'>
+                            <Tab.List className='flex flex-row flex-wrap mb-4 mt-4 justify-center'>
+                                <Tab className='flex flex-col ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 border rounded-lg p-1 justify-between mr-3'>
                                     Board
                                 </Tab>
-                                <Tab className='flex flex-col border-none rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Table
                                 </Tab>
-                                <Tab className='flex flex-col border-none rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Timeline
                                 </Tab>
-                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Calendar
                                 </Tab>
-                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Calendar
                                 </Tab>
-                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Gallery
                                 </Tab>
-                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     List
                                 </Tab>
                             </Tab.List>
@@ -210,7 +230,7 @@ const Logos = () => {
                     </div>
                 </div>
 
-                <div className='max-w-[47%] flex flex-col bg-[#F6F5F4] rounded-lg mb-4'>
+                <div className='md:max-w-[47%] flex flex-col max-sm:flex-wrap bg-[#F6F5F4] rounded-lg mb-4'>
                     <div className='flex flex-col'>
                         <span className='text-lg font-bold px-8 pt-7'>
                             Customize the info you track
@@ -222,7 +242,7 @@ const Logos = () => {
                         <Image src={box1} alt='' />
                     </div>
                 </div>
-                <div className='max-w-[47%] flex flex-col bg-[#F6F5F4] rounded-lg mb-4 ml-4'>
+                <div className='md:max-w-[47%] flex flex-col max-sm:flex-wrap bg-[#F6F5F4] rounded-lg mb-4 ml-4'>
                     <div className='flex flex-col'>
                         <span className='text-lg font-bold px-8 pt-7'>
                             Build any page, communicate any idea
@@ -236,7 +256,7 @@ const Logos = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col mx-40 mt-5'>
+            <div className='flex flex-col md:mx-40 mt-5'>
                 <span className='font-[georgia] text-center text-3xl'>
                     "Notion adapts to your needs. It’s as minimal or as powerful
                     as you need it to be."
@@ -253,7 +273,7 @@ const Logos = () => {
                     </div>
                 </div>
             </div>
-            <div className='h-[120px]'></div>
+            <div className='md:h-[120px] max-sm:h-10'></div>
         </div>
     );
 };
