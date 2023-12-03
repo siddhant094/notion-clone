@@ -1,4 +1,17 @@
+'use client';
+
 import Image from 'next/image';
+import { Tab } from '@headlessui/react';
+
+import box1 from '../../../public/assets/box-i2.webp';
+import box2 from '../../../public/assets/box-i1.webp';
+
+import p1 from '../../../public/assets/p1.webp';
+import p2 from '../../../public/assets/p2.webp';
+import p3 from '../../../public/assets/p3.webp';
+import p4 from '../../../public/assets/p4.webp';
+import p5 from '../../../public/assets/p5.webp';
+import p6 from '../../../public/assets/p6.webp';
 
 import i11 from '../../../public/assets/i11.png';
 import i12 from '../../../public/assets/i12.png';
@@ -22,8 +35,13 @@ import toolline from '../../../public/assets/tool-line.webp';
 import toollogo from '../../../public/assets/tool-logo.webp';
 
 import metalab from '../../../public/assets/metalab.png';
+import matchgroup from '../../../public/assets/match-group.png';
 
 const Logos = () => {
+    function classNames(arg0: string, arg1: string, arg2: string): string {
+        throw new Error('Function not implemented.');
+    }
+
     return (
         <div>
             <div className='h-[120px]'></div>
@@ -104,6 +122,138 @@ const Logos = () => {
                     </div>
                 </div>
             </div>
+            <div className='min-h-[80px]'></div>
+            <span className='text-5xl font-bold pb-6 flex justify-center items-center'>
+                Powerful building blocks
+            </span>
+            <div className='flex flex-wrap justify-between'>
+                <div className='flex flex-col px-8 py-7 bg-[#F6F5F4] rounded-lg mb-4'>
+                    <div className='flex flex-col'>
+                        <span className='text-lg font-bold'>
+                            Visualize, filter & sort any way you want
+                        </span>
+                        <span className='my-4'>
+                            Show only tasks assigned to you, or items marked as
+                            urgent. Break <br />
+                            down any project in the way that’s most helpful to
+                            you.
+                        </span>
+                        <Tab.Group>
+                            <Tab.Panels>
+                                <Tab.Panel>
+                                    <Image
+                                        src={p1}
+                                        alt='c1'
+                                        className='border rounded-lg'
+                                    />
+                                </Tab.Panel>
+                                <Tab.Panel>
+                                    <Image
+                                        src={p2}
+                                        alt='c2'
+                                        className='border rounded-lg'
+                                    />
+                                </Tab.Panel>
+                                <Tab.Panel>
+                                    <Image
+                                        src={p3}
+                                        alt='c3'
+                                        className='border rounded-lg'
+                                    />
+                                </Tab.Panel>
+                                <Tab.Panel>
+                                    <Image
+                                        src={p4}
+                                        alt='c4'
+                                        className='border rounded-lg'
+                                    />
+                                </Tab.Panel>
+                                <Tab.Panel>
+                                    <Image
+                                        src={p5}
+                                        alt='c4'
+                                        className='border rounded-lg'
+                                    />
+                                </Tab.Panel>
+                                <Tab.Panel>
+                                    <Image
+                                        src={p6}
+                                        alt='c4'
+                                        className='border rounded-lg'
+                                    />
+                                </Tab.Panel>
+                            </Tab.Panels>
+                            <Tab.List className='flex flex-row mb-4 mt-4 justify-center'>
+                                <Tab className='flex flex-col bg-[#E3E2E1] hover:bg-[#ECEBEA] border-none rounded-lg py-1 px-2  justify-between mr-3'>
+                                    Board
+                                </Tab>
+                                <Tab className='flex flex-col border-none rounded-lg p-1 justify-between mr-3'>
+                                    Table
+                                </Tab>
+                                <Tab className='flex flex-col border-none rounded-lg p-1 justify-between mr-3'>
+                                    Timeline
+                                </Tab>
+                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                    Calendar
+                                </Tab>
+                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                    Calendar
+                                </Tab>
+                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                    Gallery
+                                </Tab>
+                                <Tab className='flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                    List
+                                </Tab>
+                            </Tab.List>
+                        </Tab.Group>
+                    </div>
+                </div>
+
+                <div className='max-w-[47%] flex flex-col bg-[#F6F5F4] rounded-lg mb-4'>
+                    <div className='flex flex-col'>
+                        <span className='text-lg font-bold px-8 pt-7'>
+                            Customize the info you track
+                        </span>
+                        <span className='my-4 px-8'>
+                            Create your own labels, tags, owners, and more, so
+                            everyone has context and everything stays organized.
+                        </span>
+                        <Image src={box1} alt='' />
+                    </div>
+                </div>
+                <div className='max-w-[47%] flex flex-col bg-[#F6F5F4] rounded-lg mb-4 ml-4'>
+                    <div className='flex flex-col'>
+                        <span className='text-lg font-bold px-8 pt-7'>
+                            Build any page, communicate any idea
+                        </span>
+                        <span className='my-4 px-8'>
+                            Everything is drag and drop in Notion — images,
+                            toggles, to-do’s, even embedded databases.
+                        </span>
+                        <Image src={box1} alt='' className='mr-0 mb-0' />
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col mx-40 mt-5'>
+                <span className='font-[georgia] text-center text-3xl'>
+                    "Notion adapts to your needs. It’s as minimal or as powerful
+                    as you need it to be."
+                </span>
+                <div className='flex flex-row justify-center mt-4'>
+                    <Image
+                        src={matchgroup}
+                        alt='matchgroup img'
+                        className='w-auto h-auto mr-2'
+                    />
+                    <div className='flex flex-col text-sm'>
+                        <span className='font-bold'>Rahim Makani</span>
+                        <span>Director of Product, Matchgroup</span>
+                    </div>
+                </div>
+            </div>
+            <div className='h-[120px]'></div>
         </div>
     );
 };

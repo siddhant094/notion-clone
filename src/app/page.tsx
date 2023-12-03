@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Tab from './components/Tabs';
 import Logos from './components/Logos';
+import Team from './components/Team';
 import NotionAIaddon from './components/NotionAIaddon';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
             <Hero />
             <Tab />
             <Logos />
+            <Team />
             {/* <NotionAIaddon /> */}
         </main>
     );
