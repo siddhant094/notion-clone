@@ -108,6 +108,7 @@ const Avatars = (props: any) => {
                         <Carousel className='w-full h-full'>
                             {items.map((item, i) => (
                                 <Image
+                                    key={i}
                                     src={img1}
                                     alt='welcome'
                                     className='w-full h-full mx-8 my-8'
