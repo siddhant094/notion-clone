@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.cdnfonts.com/css/georgia');
+
+
+.btn {
+  box-shadow: 0 4px 9px rgba(0, 0, 0, .047), 0 1.54074px 2.86667px rgba(0, 0, 0, .073), 0 0.325926px 0.733333px rgba(0, 0, 0, .12);
+}
