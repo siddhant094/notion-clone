@@ -57,30 +57,46 @@ const Logos = () => {
                 </span>
                 <a
                     href=''
-                    className='text-center hover:underline text-[#0a85d1] font-semibold'
+                    className='text-center hover:underline text-[#0a85d1] font-semibold max-sm:mb-12'
                 >
                     Read customer {'stories '}
                     <span aria-hidden='true'>→</span>
                 </a>
-                <div className='mt-8 flex flex-row max-sm:flex-wrap items-center mb-12 justify-center'>
-                    <Image src={i11} alt='' className='h-4' />
-                    <Image src={i12} alt='' className='h-4' />
-                    <Image src={i13} alt='' className='h-4' />
-                    <Image src={i14} alt='' className='h-4' />
-                    <Image src={i15} alt='' className='h-4' />
-                    <Image src={i16} alt='' className='h-4' />
+                <div className='md:mt-8 flex flex-row max-sm:flex-wrap items-center md:mb-12 justify-between'>
+                    <Image src={i11} alt='' className='w-[87px] h-[29px]' />
+                    <Image
+                        src={i12}
+                        alt=''
+                        className='max-w-[109px] h-[23px]'
+                    />
+                    <Image
+                        src={i13}
+                        alt=''
+                        className='w-[135px] h-[19px] max-sm:mb-2'
+                    />
+                    <Image
+                        src={i14}
+                        alt=''
+                        className='w-[83px] h-[30px] max-sm:mb-2'
+                    />
+                    <Image src={i15} alt='' className='w-[90px] h-[30px]' />
+                    <Image src={i16} alt='' className='w-[98px] h-[25px]' />
                 </div>
-                <div className='mt-8 flex flex-row mb-12 max-sm:flex-wrap'>
-                    <Image src={i21} alt='' className='h-6 ' />
-                    <Image src={i22} alt='' className='h-6 ' />
-                    <Image src={i23} alt='' className='h-6 ' />
-                    <Image src={i24} alt='' className='h-6 ' />
-                    <Image src={i25} alt='' className='h-6 ' />
-                    <Image src={i26} alt='' className='h-6 ' />
+                <div className='md:mt-8 flex flex-row md:mb-12 max-sm:flex-wrap items-center justify-around'>
+                    <Image src={i21} alt='' className='w-[50px] h-[50px]' />
+                    <Image src={i22} alt='' className='w-[84px] h-[30px]' />
+                    <Image src={i23} alt='' className='w-[82px] h-[30px]' />
+                    <Image src={i24} alt='' className='w-[96px] h-[25px]' />
+                    <Image src={i25} alt='' className='w-[101px] h-[25px]' />
+                    <Image src={i26} alt='' className='w-[100px] h-[25px]' />
                 </div>
-                <div className='mt-8 flex flex-row mb-12 max-sm:flex-wrap'>
-                    <Image src={i31} alt='' className='h-6 ' />
-                    <Image src={i32} alt='' className='h-6 ' />
+                <div className='md:mt-8 flex flex-row md:mb-12 max-sm:flex-wrap items-center justify-center'>
+                    <Image
+                        src={i31}
+                        alt=''
+                        className='w-[100px] h-[25px] md:mr-5'
+                    />
+                    <Image src={i32} alt='' className='w-[100px] h-[25px]' />
                 </div>
             </div>
 

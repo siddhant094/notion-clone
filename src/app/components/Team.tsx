@@ -27,37 +27,37 @@ const Team = () => {
             </span>
             <Tab.Group>
                 <Tab.List className='flex flex-row mb-4 justify-between overflow-x-scroll'>
-                    <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
+                    <Tab className='focus:outline-none ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti1} alt='ti1' className='w-16 h-16' />
-                        <span className='text-[##050505] text-base font-medium '>
+                        <span className='text-[##050505] text-base font-medium focus:outline-none'>
                             Engineering
                         </span>
                     </Tab>
-                    <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
+                    <Tab className='focus:outline-none ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti2} alt='ti2' className='w-16 h-16' />
                         <span className='text-[##050505] text-base font-medium'>
                             Design
                         </span>
                     </Tab>
-                    <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
+                    <Tab className='focus:outline-none ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti3} alt='ti3' className='w-16 h-16' />
                         <span className='text-[##050505] text-base font-medium'>
                             Product
                         </span>
                     </Tab>
-                    <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
+                    <Tab className='focus:outline-none ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti4} alt='ti4' className='w-16 h-16' />
                         <span className='text-[##050505] text-base font-medium'>
                             Marketing
                         </span>
                     </Tab>
-                    <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
+                    <Tab className='focus:outline-none ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center mr-3 flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti5} alt='ti5' className='w-16 h-16' />
                         <span className='text-[##050505] text-base font-medium'>
                             Operations
                         </span>
                     </Tab>
-                    <Tab className='ui-not-selected:bg-[#F6F5F4] ui-selected:border-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center flex-grow rounded-xl hover:bg-[#F1EFEE]'>
+                    <Tab className='max-sm:w-1/4 focus:outline-none ui-not-selected:bg-[#F6F5F4] ui-selected:bg-white ui-selected:border flex flex-col p-4 justify-center items-center flex-grow rounded-xl hover:bg-[#F1EFEE]'>
                         <Image src={ti6} alt='ti6' className='w-16 h-16' />
                         <span className='text-[##050505] text-base font-medium'>
                             HR
