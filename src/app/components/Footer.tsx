@@ -113,7 +113,7 @@ const Footer = () => {
                         Become an affiliate
                     </span>
                 </div>
-                <div className='flex flex-col text-right'>
+                <div className='flex flex-col max-sm:text-right'>
                     <span className='font-semibold text-[#121212] mt-8'>
                         Learn
                     </span>
@@ -158,7 +158,7 @@ const Footer = () => {
                         Compare vs Jira
                     </span>
                 </div>
-                <div className='flex flex-col text-right max-sm:mb-8'>
+                <div className='flex flex-col max-sm:text-right max-sm:mb-8'>
                     <span className='font-semibold text-[#121212] mt-8'>
                         Resources
                     </span>

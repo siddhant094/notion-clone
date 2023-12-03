@@ -204,25 +204,22 @@ const Logos = () => {
                                 </Tab.Panel>
                             </Tab.Panels>
                             <Tab.List className='flex flex-row flex-wrap mb-4 mt-4 justify-center'>
-                                <Tab className='flex flex-col ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='focus:outline-none flex flex-col ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 border rounded-lg p-1 justify-between mr-3'>
                                     Board
                                 </Tab>
-                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='focus:outline-none ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Table
                                 </Tab>
-                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='focus:outline-none ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Timeline
                                 </Tab>
-                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='focus:outline-none ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Calendar
                                 </Tab>
-                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
-                                    Calendar
-                                </Tab>
-                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='focus:outline-none ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     Gallery
                                 </Tab>
-                                <Tab className='ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
+                                <Tab className='focus:outline-none ui-selected:bg-[#E3E2E1] hover:bg-[#ECEBEA] px-2 flex flex-col border rounded-lg p-1 justify-between mr-3'>
                                     List
                                 </Tab>
                             </Tab.List>
