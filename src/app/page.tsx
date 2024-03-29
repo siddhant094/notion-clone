@@ -11,7 +11,7 @@ import Navbar from './components/Navbar';
 export default function Home() {
     return (
         <div>
-            <main className='max-sm:p-4 md:px-32 font-[Inter]'>
+            <main className='max-sm:p-4 md:px-32'>
                 <Navbar />
                 <Hero />
                 <Tab />

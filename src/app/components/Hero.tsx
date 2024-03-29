@@ -7,10 +7,10 @@ const Hero = () => {
     return (
         // <div className='flex flex-row justify-between'>
         <div className='flex flex-col'>
-            <span className='text-6xl font-[Inter] font-bold pt-14 my-3 text-center max-sm:text-5xl'>
+            <span className='text-6xl font-bold pt-14 my-3 text-center max-sm:text-5xl'>
                 Write, plan, share. <br /> With AI at your side.
             </span>
-            <span className='text-2xl font-[Inter] font-medium mb-5 text-center'>
+            <span className='text-2xl font-medium mb-5 text-center'>
                 Notion is the connected workspace where better, faster work
                 happens.
             </span>
